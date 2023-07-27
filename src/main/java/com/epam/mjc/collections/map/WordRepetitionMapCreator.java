@@ -6,7 +6,7 @@ import java.util.Map;
 public class WordRepetitionMapCreator {
     public Map<String, Integer> createWordRepetitionMap(String sentence) {
         String[] words = sentence.toLowerCase()
-                .replaceAll("[^a-zA-Z ]+","")
+                .replaceAll("[^a-zA-Z ]+", "")
                 .split(" ");
         HashMap<String, Integer> map = new HashMap<>();
 
